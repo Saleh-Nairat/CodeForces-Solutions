@@ -37,3 +37,29 @@ int main()
     }
     return  0;
 }
+
+/*
+                another solution: using stack 
+
+    tc
+    {
+        int n,counter=0,result=0;
+        string s;
+
+        cin >> n >> s;
+
+        stack<char> stk;
+
+        for(auto c : s)
+        {
+            if(c=='(') {stk.push(c);}
+
+            else if(!stk.empty()) {stk.pop();}
+        }
+
+        cout << stk.size() << en;
+
+    }
+    return  0;
+
+*/
